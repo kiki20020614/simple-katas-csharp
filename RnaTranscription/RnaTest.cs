@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace RnaTranscription
 {
-    public class RnaTranscriptionTest
+    public class RnaTest
     {
         [Test]
         public void RnaTranscriptionOfEmptyDnaIsEmptyRna()
