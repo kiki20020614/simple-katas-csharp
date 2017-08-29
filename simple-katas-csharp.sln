@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoFer", "TwoFer\TwoFer.csproj", "{9095E94F-5105-44D3-8C64-056B18A46EBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear", "LeapYear\LeapYear.csproj", "{58739F60-C1F3-4242-B550-7FA01811E8ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5C7F0C6-3C08-4E64-811A-E20037ADD35C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,10 @@ Global
 		{9095E94F-5105-44D3-8C64-056B18A46EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9095E94F-5105-44D3-8C64-056B18A46EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9095E94F-5105-44D3-8C64-056B18A46EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58739F60-C1F3-4242-B550-7FA01811E8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58739F60-C1F3-4242-B550-7FA01811E8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58739F60-C1F3-4242-B550-7FA01811E8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58739F60-C1F3-4242-B550-7FA01811E8ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
