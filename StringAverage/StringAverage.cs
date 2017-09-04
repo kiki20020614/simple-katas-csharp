@@ -20,6 +20,7 @@ namespace StringAverage
 
         public static string StringAvg(string str)
         {
+            str = str.ToLower();
             if (string.IsNullOrEmpty(str))
                 return "n/a";
 
