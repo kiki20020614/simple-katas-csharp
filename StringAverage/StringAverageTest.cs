@@ -36,5 +36,11 @@ namespace StringAverage
         {
             Assert.AreEqual("one", StrAvg.StringAvg("OnE"));
         }
+
+        [Test]
+        public void String_Is_one_five_Return_three()
+        {
+            Assert.AreEqual("three", StrAvg.StringAvg("one five"));
+        }
     }
 }
