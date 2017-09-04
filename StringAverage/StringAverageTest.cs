@@ -21,5 +21,14 @@ namespace StringAverage
         {
             Assert.AreEqual("one", StrAvg.StringAvg("one"));
         }
+        //including String_Is_two_Return_two
+        //including String_Is_three_Return_three
+        //......
+
+        [Test]
+        public void String_Is_ten_Return_NA()
+        {
+            Assert.AreEqual("ten", StrAvg.StringAvg("n/a"));
+        }
     }
 }
