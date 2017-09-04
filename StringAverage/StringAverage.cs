@@ -18,15 +18,29 @@ namespace StringAverage
             {"zero", 0},
         };
 
-        public static string StringAvg(string str)
+        public static string StringAvg(string collectionStr)
         {
-            str = str.ToLower();
-            var num = strMappingNum.Select(m => m).Where(a => a.Key == str).FirstOrDefault();
+            collectionStr = collectionStr.ToLower();
 
-            if (string.IsNullOrEmpty(str) || num.Key == null)
-                return "n/a";
+            var sRtn = string.Empty;
+            var intResult = 0;
+            var splitStr = collectionStr.Split(' ');
+            foreach (var singleStr in splitStr)
+            {
+                var num = strMappingNum.Select(m => m).Where(a => a.Key == singleStr).FirstOrDefault();
 
-            return str;
+                if (string.IsNullOrEmpty(collectionStr) || num.Key == null)
+                {
+                    sRtn = "n/a";
+                    break;
+                }
+
+                intResult += num.Value;
+            }
+            intResult = intResult/splitStr.Length;
+            sRtn = strMappingNum.FirstOrDefault(x => x.Value == intResult).Key;
+
+            return sRtn;
         }
     }
 }
