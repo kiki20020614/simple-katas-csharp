@@ -42,5 +42,11 @@ namespace StringAverage
         {
             Assert.AreEqual("three", StrAvg.StringAvg("one five"));
         }
+
+        [Test]
+        public void String_Is_ten_oo_five_Return_NA()
+        {
+            Assert.AreEqual("n/a", StrAvg.StringAvg("ten oo five"));
+        }
     }
 }
