@@ -14,7 +14,7 @@ namespace StringAverage
             {"six", 6},
             {"seven", 7},
             {"eight", 8},
-            {"night", 9},
+            {"nine", 9},
             {"zero", 0},
         };
 
