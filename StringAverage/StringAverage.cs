@@ -21,14 +21,10 @@ namespace StringAverage
         public static string StringAvg(string str)
         {
             str = str.ToLower();
-            if (string.IsNullOrEmpty(str))
-                return "n/a";
-
             var num = strMappingNum.Select(m => m).Where(a => a.Key == str).FirstOrDefault();
-            if (num.Key == null)
-            {
+
+            if (string.IsNullOrEmpty(str) || num.Key == null)
                 return "n/a";
-            }
 
             return str;
         }
