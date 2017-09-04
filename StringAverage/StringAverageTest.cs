@@ -28,7 +28,7 @@ namespace StringAverage
         [Test]
         public void String_Is_ten_Return_NA()
         {
-            Assert.AreEqual("ten", StrAvg.StringAvg("n/a"));
+            Assert.AreEqual("n/a", StrAvg.StringAvg("ten"));
         }
     }
 }
