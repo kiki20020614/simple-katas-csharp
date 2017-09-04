@@ -22,20 +22,18 @@ namespace StringAverage
         {
             collectionStr = collectionStr.ToLower();
 
-            var sRtn = string.Empty;
+            var sRtn = "n/a";
             var intResult = 0;
             var splitStr = collectionStr.Split(' ');
             foreach (var singleStr in splitStr)
             {
-                var num = strMappingNum.Select(m => m).Where(a => a.Key == singleStr).FirstOrDefault();
-
-                if (string.IsNullOrEmpty(collectionStr) || num.Key == null)
+                if (string.IsNullOrEmpty(collectionStr) || !strMappingNum.ContainsKey(singleStr))
                 {
-                    sRtn = "n/a";
-                    break;
+                    return sRtn;
                 }
 
-                intResult += num.Value;
+                var num = strMappingNum.FirstOrDefault(x => x.Key == singleStr).Value;
+                intResult += num;
             }
             intResult = intResult/splitStr.Length;
             sRtn = strMappingNum.FirstOrDefault(x => x.Value == intResult).Key;
