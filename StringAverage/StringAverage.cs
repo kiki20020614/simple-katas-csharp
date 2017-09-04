@@ -5,9 +5,10 @@ namespace StringAverage
     public class StrAvg
     {
         public static string StringAvg(string str)
-        { 
-
-            throw new System.NotImplementedException();
+        {
+            if (str == string.Empty)
+                return "n/a";
+            return str;
         }
     }
 }
